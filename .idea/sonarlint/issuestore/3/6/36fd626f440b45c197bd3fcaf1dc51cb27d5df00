@@ -1,9 +1,0 @@
-
-dsquid:S2095$"MUse try-with-resources or close this "MessageConsumer" in a "finally" clause.(ï¦­ğ
-isquid:S2095"MUse try-with-resources or close this "MessageProducer" in a "finally" clause.(›âÃÁûÿÿÿÿ
-asquid:S2095"EUse try-with-resources or close this "Session" in a "finally" clause.(èÃŒ ÿÿÿÿÿ
-dsquid:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(Üì“ûÿÿÿÿ
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÜõÖã
-:squid:S1148+"#Use a logger to log this exception.(Ç’Çê
-T
-squid:S106)"9Replace this use of System.out or System.err by a logger.(ù‘™§ûÿÿÿÿ

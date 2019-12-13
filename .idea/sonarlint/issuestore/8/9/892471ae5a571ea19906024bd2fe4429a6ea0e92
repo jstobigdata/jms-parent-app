@@ -1,33 +1,0 @@
-
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Î¡’Ü
-esquid:S2095g"IUse try-with-resources or close this "JMSConsumer" in a "finally" clause.(ü°¦£øÿÿÿÿ
-T
-squid:S1066"9Replace this use of System.out or System.err by a logger.(†æôşÿÿÿÿÿ
-T
-squid:S1069"9Replace this use of System.out or System.err by a logger.(àİ³¥ÿÿÿÿÿ
-T
-squid:S106I"9Replace this use of System.out or System.err by a logger.(à¿àåüÿÿÿÿ
-T
-squid:S106%"9Replace this use of System.out or System.err by a logger.(°è£Ôüÿÿÿÿ
-O
-squid:S106K"9Replace this use of System.out or System.err by a logger.(ë¬–û
-O
-squid:S1068"9Replace this use of System.out or System.err by a logger.(Ê¾Ø¥
-esquid:S20954"IUse try-with-resources or close this "JMSConsumer" in a "finally" clause.(ü°¦£øÿÿÿÿ
-esquid:S2095$"IUse try-with-resources or close this "JMSConsumer" in a "finally" clause.(¦ÆÆÖúÿÿÿÿ
-O
-squid:S106L"9Replace this use of System.out or System.err by a logger.(ÿáÉß
-[
-squid:S106Z"9Replace this use of System.out or System.err by a logger.(êÊ±«ûÿÿÿÿ8ˆÑË×ä-
-[
-squid:S106["9Replace this use of System.out or System.err by a logger.(ÛîĞúÿÿÿÿ8ˆÑË×ä-
-T
-squid:S106j"9Replace this use of System.out or System.err by a logger.(ÏÊ²ûÿÿÿÿ
-lsquid:S2095X"IUse try-with-resources or close this "JMSConsumer" in a "finally" clause.(ü°¦£øÿÿÿÿ8ˆÑË×ä-
-O
-squid:S106i"9Replace this use of System.out or System.err by a logger.(İàû
-O
-squid:S106J"9Replace this use of System.out or System.err by a logger.(ë¬–û
-O
-squid:S1067"9Replace this use of System.out or System.err by a logger.(ÒÜ¹Ÿ
-esquid:S2095G"IUse try-with-resources or close this "JMSConsumer" in a "finally" clause.(ü°¦£øÿÿÿÿ

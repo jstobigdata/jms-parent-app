@@ -1,8 +1,0 @@
-
-?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-Qsquid:S1118	":Add a private constructor to hide the implicit public one.(şÙı¸
-tsquid:S3008"XRename this field "PUB_SUB_TOPIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ŸËÑşÿÿÿÿ
-ksquid:S3008"TRename this field "PTP_QUEUE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ×„
-tsquid:S3008"^Rename this field "DEFAULT_REPLY_QUEUE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ„£@
-tsquid:S3008
-"]Rename this field "CONNECTION_FACTORY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾‡ÿú
