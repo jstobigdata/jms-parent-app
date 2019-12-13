@@ -1,0 +1,9 @@
+
+?squid:S1148$"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+`squid:S2095!"IUse try-with-resources or close this "JMSConsumer" in a "finally" clause.(ó½¥ç
+T
+squid:S106""9Replace this use of System.out or System.err by a logger.(ù‘™§ûÿÿÿÿ
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(èÿ¡ûÿÿÿÿ
+?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+ksquid:S2259"OA "NullPointerException" could be thrown; "connectionFactory" is nullable here.(ùŠ™çüÿÿÿÿ
+Lsquid:S1481"0Remove this unused "jmsProducer" local variable.(¾øï¯ÿÿÿÿÿ

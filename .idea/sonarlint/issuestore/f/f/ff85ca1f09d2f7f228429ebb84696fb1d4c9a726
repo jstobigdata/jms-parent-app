@@ -1,0 +1,12 @@
+
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Íè÷ç-
+lsquid:S2095("IUse try-with-resources or close this "JMSConsumer" in a "finally" clause.(ãöõ…ÿÿÿÿÿ8Œ£È÷ç-
+V
+squid:S106+"9Replace this use of System.out or System.err by a logger.(Ì˜Ñ‘8Íè÷ç-
+dsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8Íè÷ç-
+Fsquid:S11482"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Íè÷ç-
+dsquid:S21421"FEither re-interrupt this method or rethrow the "InterruptedException".(­¥è°8õ–ã÷ç-
+[
+squid:S106,"9Replace this use of System.out or System.err by a logger.(ìÌ¡üÿÿÿÿ8«ëË÷ç-
+gsquid:S2095)"IUse try-with-resources or close this "JMSConsumer" in a "finally" clause.(ˆúê8ë´É÷ç-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ì‡ôöÿÿÿÿÿ

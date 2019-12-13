@@ -1,0 +1,27 @@
+
+[
+squid:S106V"9Replace this use of System.out or System.err by a logger.(›Ú¬³øÿÿÿÿ8ãªÁşæ-
+V
+squid:S106H"9Replace this use of System.out or System.err by a logger.(ôò¢Ğ8øß›îå-
+isquid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(¨Úåü8ÉÀ¡Òæ-
+lsquid:S2095S"IUse try-with-resources or close this "JMSConsumer" in a "finally" clause.(ü°¦£øÿÿÿÿ8Ç¢²şæ-
+V
+squid:S106%"9Replace this use of System.out or System.err by a logger.(¦Œ­‰8½°Ê×å-
+lsquid:S2095<"IUse try-with-resources or close this "JMSConsumer" in a "finally" clause.(ü°¦£øÿÿÿÿ8Äìöíå-
+Ksquid:S1068".Remove this unused "replyQueue" private field.(ºãŠt8ÉÀ¡Òæ-
+hsquid:S2095!"JUse try-with-resources or close this "QueueBrowser" in a "finally" clause.(™ğ¬8ì Á×å-
+[
+squid:S106>"9Replace this use of System.out or System.err by a logger.(ûµ¹Úùÿÿÿÿ8Äìöíå-
+vsquid:S1450"YRemove the "replyQueue" field and declare it as a local variable in the relevant methods.(ºãŠt8ÉÀ¡Òæ-
+Fsquid:S1148X"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ãªÁşæ-
+lsquid:S2095("IUse try-with-resources or close this "JMSConsumer" in a "finally" clause.(ü°¦£øÿÿÿÿ8Î«úØå-
+U
+squid:S1069"9Replace this use of System.out or System.err by a logger.(–Ø½m8Äìöíå-
+V
+squid:S106*"9Replace this use of System.out or System.err by a logger.(§Õºµ8£àúØå-
+gsquid:S2095G"IUse try-with-resources or close this "JMSConsumer" in a "finally" clause.(ú™Ò€8øß›îå-
+V
+squid:S106J"9Replace this use of System.out or System.err by a logger.(•õÀ½8òšŸîå-
+´%squid:RedundantThrowsDeclarationCheckP"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(­²Ô›øÿÿÿÿ8ğçŞşæ-
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÄØÏÄ
+isquid:CommentedOutCodeLineK"<This block of commented-out lines of code should be removed.(—½Š…8ĞúØÎæ-
