@@ -5,7 +5,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import javax.jms.*;
-import javax.xml.soap.Text;
 import java.util.Enumeration;
 
 public class PointToPointExample {
@@ -79,7 +78,6 @@ public class PointToPointExample {
   @Test
   public void testAsyncConsumer() throws InterruptedException {
     try(JMSContext jmsContext = connectionFactory.createContext()){
-
       JMSConsumer consumer = jmsContext.createConsumer(queue);
       consumer.setMessageListener(message -> {
         try {
@@ -92,6 +90,9 @@ public class PointToPointExample {
       JMSProducer producer = jmsContext.createProducer().send(queue, "Message 1");
       producer.send(queue, "Message 2");
       producer.send(queue, "Message 3");
+
+      //Close the Consumer
+      consumer.close();
     }
   }
 

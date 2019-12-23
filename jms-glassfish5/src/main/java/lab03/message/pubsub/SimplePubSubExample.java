@@ -31,7 +31,7 @@ public class SimplePubSubExample {
       public void run(){
         try(JMSContext jmsContext = connectionFactory.createContext()) {
           JMSConsumer consumer = jmsContext.createConsumer(defaultTopic);
-          System.out.println(consumer.receive().getBody(String.class));
+          System.out.println("Message received: " + consumer.receive().getBody(String.class));
         } catch (JMSException e){
           e.printStackTrace();
         }
@@ -39,6 +39,7 @@ public class SimplePubSubExample {
     };
 
     Thread subscriber2 = new Thread(subscriber1);
+
 
     publish.start();
     subscriber1.start();
