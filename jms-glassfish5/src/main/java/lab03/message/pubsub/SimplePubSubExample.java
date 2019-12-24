@@ -3,7 +3,6 @@ package lab03.message.pubsub;
 import labxx.common.settings.CommonSettings;
 
 import javax.jms.*;
-import java.util.StringJoiner;
 
 public class SimplePubSubExample {
   private static ConnectionFactory connectionFactory = null;
@@ -19,9 +18,12 @@ public class SimplePubSubExample {
       @Override
       public void run(){
         try(JMSContext jmsContext = connectionFactory.createContext()) {
+          Thread.sleep(1000);
           JMSProducer producer = jmsContext.createProducer();
-          TextMessage message = jmsContext.createTextMessage("World needs to worry about climate changes");
+          TextMessage message = jmsContext.createTextMessage("World needs to worry about the Climate changes");
           producer.send(defaultTopic, message);
+        } catch (InterruptedException ex){
+          ex.printStackTrace();
         }
       }
     };
@@ -40,10 +42,8 @@ public class SimplePubSubExample {
 
     Thread subscriber2 = new Thread(subscriber1);
 
-
     publish.start();
     subscriber1.start();
     subscriber2.start();
   }
-
 }

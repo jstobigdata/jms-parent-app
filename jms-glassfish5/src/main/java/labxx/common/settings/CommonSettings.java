@@ -1,10 +1,10 @@
 package labxx.common.settings;
 
-    import javax.jms.ConnectionFactory;
-    import javax.jms.Queue;
-    import javax.jms.Topic;
-    import javax.naming.InitialContext;
-    import javax.naming.NamingException;
+import javax.jms.ConnectionFactory;
+import javax.jms.Queue;
+import javax.jms.Topic;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
 
 public class CommonSettings {
   private static ConnectionFactory CONNECTION_FACTORY = null;
@@ -32,7 +32,7 @@ public class CommonSettings {
     return PTP_QUEUE;
   }
 
-  public static Queue getDefaultReplyQueue(){
+  public static Queue getDefaultReplyQueue() {
     return DEFAULT_REPLY_QUEUE;
   }
 

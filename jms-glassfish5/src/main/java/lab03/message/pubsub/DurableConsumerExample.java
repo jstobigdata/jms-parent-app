@@ -20,12 +20,9 @@ public class DurableConsumerExample {
         try (JMSContext jmsContext = connectionFactory.createContext()) {
           JMSProducer producer = jmsContext.createProducer();
           Thread.sleep(1000);
-          producer.send(defaultTopic, "Update 1");
-          producer.send(defaultTopic, "Update 2");
-          producer.send(defaultTopic, "Update 3");
-          producer.send(defaultTopic, "Update 4");
-          producer.send(defaultTopic, "Update 5");
-          producer.send(defaultTopic, "Update 6");
+          for (int i = 1; i < 7; i++) {
+            producer.send(defaultTopic, "Update " + i);
+          }
         } catch (InterruptedException e) {
           e.printStackTrace();
         }
@@ -36,19 +33,19 @@ public class DurableConsumerExample {
     Thread sharedConsumer = new Thread() {
       @Override
       public void run() {
-        try (JMSContext jmsContext = connectionFactory.createContext()) {
-          JMSConsumer sharedConsumer1 = jmsContext.createSharedConsumer(defaultTopic, "sharedSubscriber");
-          JMSConsumer sharedConsumer2 = jmsContext.createSharedConsumer(defaultTopic, "sharedSubscriber");
-          for (int i = 0; i < 3; i++) {
-            System.out.println("Shared Consumer1: " + sharedConsumer1.receive().getBody(String.class));
-            System.out.println("Shared Consumer2: " + sharedConsumer2.receive().getBody(String.class));
+          try (JMSContext jmsContext = connectionFactory.createContext()) {
+            jmsContext.setClientID("exampleApp");
+            JMSConsumer consumer = jmsContext.createDurableConsumer(defaultTopic, "logConsumer");
+            System.out.println(consumer.receive().getBody(String.class));
+            Thread.sleep(2000);
+            consumer.close();
+            consumer = jmsContext.createDurableConsumer(defaultTopic, "logConsumer");
+            for (int i = 1; i < 6; i++) {
+              System.out.println(consumer.receive().getBody(String.class));
+            }
+          } catch (JMSException | InterruptedException e) {
+            e.printStackTrace();
           }
-          Thread.sleep(3000);
-          sharedConsumer1.close();
-          sharedConsumer2.close();
-        } catch (JMSException | InterruptedException e) {
-          e.printStackTrace();
-        }
       }
     };
 
