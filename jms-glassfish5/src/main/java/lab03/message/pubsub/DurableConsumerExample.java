@@ -29,27 +29,27 @@ public class DurableConsumerExample {
       }
     };
 
-    //Shared Consumer
-    Thread sharedConsumer = new Thread() {
+    //Durable Consumer
+    Thread durableConsumer = new Thread() {
       @Override
       public void run() {
-          try (JMSContext jmsContext = connectionFactory.createContext()) {
-            jmsContext.setClientID("exampleApp");
-            JMSConsumer consumer = jmsContext.createDurableConsumer(defaultTopic, "logConsumer");
+        try (JMSContext jmsContext = connectionFactory.createContext()) {
+          jmsContext.setClientID("exampleApp");
+          JMSConsumer consumer = jmsContext.createDurableConsumer(defaultTopic, "logConsumer");
+          System.out.println(consumer.receive().getBody(String.class));
+          Thread.sleep(2000);
+          consumer.close();
+          consumer = jmsContext.createDurableConsumer(defaultTopic, "logConsumer");
+          for (int i = 1; i < 6; i++) {
             System.out.println(consumer.receive().getBody(String.class));
-            Thread.sleep(2000);
-            consumer.close();
-            consumer = jmsContext.createDurableConsumer(defaultTopic, "logConsumer");
-            for (int i = 1; i < 6; i++) {
-              System.out.println(consumer.receive().getBody(String.class));
-            }
-          } catch (JMSException | InterruptedException e) {
-            e.printStackTrace();
           }
+        } catch (JMSException | InterruptedException e) {
+          e.printStackTrace();
+        }
       }
     };
 
     publisher.start();
-    sharedConsumer.start();
+    durableConsumer.start();
   }
 }
