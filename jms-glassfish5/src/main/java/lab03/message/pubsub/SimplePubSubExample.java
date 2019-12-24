@@ -14,7 +14,7 @@ public class SimplePubSubExample {
   }
 
   public static void main(String[] args) {
-    Thread publish = new Thread(){
+    Thread publisher = new Thread(){
       @Override
       public void run(){
         try(JMSContext jmsContext = connectionFactory.createContext()) {
@@ -42,7 +42,7 @@ public class SimplePubSubExample {
 
     Thread subscriber2 = new Thread(subscriber1);
 
-    publish.start();
+    publisher.start();
     subscriber1.start();
     subscriber2.start();
   }
