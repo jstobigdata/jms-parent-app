@@ -12,3 +12,9 @@ A complete example of JMS 2.0 with Glassfish (examples works on ActiveMQ as well
 8. [JMS Message Selectors in Action to Filter Messages](https://jstobigdata.com/jms/jms-message-selectors-in-action-to-filter-messages/)
 9. [Guaranteed Delivery using JMS Message Acknowledgement](https://jstobigdata.com/jms/guaranteed-delivery-using-jms-message-acknowledgement/)
 10. [JMS Transactions in Action](https://jstobigdata.com/jms/jms-transactions-in-action/)
+
+```
+if(you.liked) {
+  shareWithFriends(this);
+}
+```
