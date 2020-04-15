@@ -3,6 +3,7 @@ A complete example of JMS 2.0 with Glassfish (examples works on ActiveMQ as well
 
 ```
 if(you.liked) {
+  GitHub.star();
   shareWithFriends(this);
 }
 ```
